@@ -1,6 +1,6 @@
 npm i --force
 
-npm run json-serve
+npm run json-server
 
 npm start
 
