@@ -1,4 +1,5 @@
-import Post from "../models/Posts.js";
+import Post from "../models/Post.js";
+import mongoose from "mongoose";
 
 export default {
     /**
@@ -38,7 +39,7 @@ export default {
      * @returns Post {_id, title, description, author, created_at, updated_at}
      */
     getPosts: async () => {
-        const posts = await Post.find();
+        const posts = await Post.find().populate("author");
         return {
             posts: posts.map(p => {
                 return {

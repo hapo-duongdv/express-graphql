@@ -10,8 +10,12 @@ const postSchema = new Schema({
         required: true
     },
     author: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    image: {
         type: String,
-        required: true
+        required: false
     },
     created_at: {type: Date, default: Date.now()},
     updated_at: {type: Date, default: Date.now()}

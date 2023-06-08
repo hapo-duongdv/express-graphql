@@ -1,6 +1,8 @@
 import express from "express";
 import { graphqlHTTP } from "express-graphql";
 import 'dotenv/config'
+import bodyParser from 'body-parser';
+import cors from 'cors';
 import { connectDb } from './config/db.js'
 
 import graphqlSchema from './schema/index.js';
@@ -10,10 +12,9 @@ import graphqlResolver from './resolvers/index.js';
 const app = express();
 
 connectDb();
+app.use(cors());
 
-console.log(graphqlSchema);
-
-app.use(express.json());
+app.use(bodyParser.json());
 
 app.use(
   "/graphql",
