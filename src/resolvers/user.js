@@ -8,7 +8,7 @@ export default {
      * 
      * @mutation
      * mutation {
-     *  createUser(userInput: {first_name: "Chung", last_name: "Nguyen", email: "chungm197@gmail.com", sex: "true"}) {
+     *  createUser(userInput: {first_name: "Quan", last_name: "Nguyen", email: "quan@gmail.com", sex: "true"}) {
      *      _id,
      *      first_name
      *      last_name
@@ -72,7 +72,7 @@ export default {
      * @returns User
      * 
      * @mutation {
-     *  updateUser(_id: "647eccad5def8b021291a2cd", userInputUpdate: {first_name: "Chung", last_name: "Nguyen", email: "chungm197@gmail.com", sex: "true"}) {
+     *  updateUser(_id: "647eccad5def8b021291a2cd", userInputUpdate: {first_name: "Quan", last_name: "Nguyen", email: "quan@gmail.com", sex: "true"}) {
      *      _id,
      *      first_name
      *      last_name

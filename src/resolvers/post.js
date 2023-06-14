@@ -9,7 +9,7 @@ export default {
      * 
      * @mutation
      * mutation {
-     *  createPost(postInput: {title: "bai post 1", description: "description 1", author: "Chung Nguyen"}) {
+     *  createPost(postInput: {title: "bai post 1", description: "description 1", author: "Nguyen Quan"}) {
      *      _id,
      *      title,
      *      description,
@@ -70,7 +70,7 @@ export default {
      * @returns Post
      * 
      * @mutation {
-     *  updatePost(_id: "647eccad5def8b021291a2cd", postInputUpdate: {title: "bai post 1", description: "description 1", author: "Chung Nguyen"}) {
+     *  updatePost(_id: "647eccad5def8b021291a2cd", postInputUpdate: {title: "bai post 1", description: "description 1", author: "Nguyen Quan"}) {
      *      _id
      *      title
      *      description
